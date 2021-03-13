@@ -1,0 +1,33 @@
+@mixin menu {
+    position: sticky;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  top: 0;
+  padding-right: 40%;
+}
+
+.nav {
+	background: #ffffff;
+  
+	&__title {
+    
+		margin: 0px 70px;
+    size: 45px;
+    
+	}
+	&__item {
+    left: 100%;
+    padding-top: 20px;
+    color: grey;
+		display: inline-block;
+		margin: 0px 25px;
+    
+	}
+  a{
+    text-decoration: none;
+    color: grey;
+  }
+    
+}

@@ -1,0 +1,115 @@
+
+<!-- MENU PRINCIPAL -->
+
+<ion-header [translucent]="false" class="principal">
+  <ion-toolbar>
+    <nav class="nav">
+      <div class="nav__title">
+        <a href="#"><ion-img src="../assets/img/Logo.png"></ion-img> </a>
+      </div>
+      <ul class="nav__list">
+        <li class="nav__item"><a href="#">¿Cómo funciona?</a></li>
+        <li class="nav__item"><a href="#">Comprar</a></li>
+        <li class="nav__item"><a href="#">Viajar</a></li>
+        <li class="nav__item"><a href="#">Ayuda</a></li>
+        <li class="nav__item">|</li>
+      </ul>
+    </nav>
+  </ion-toolbar>
+</ion-header>
+
+<!-- BANNER -->
+<ion-content class="contenido">
+  <div class="contenido">
+    <img class="img_fondo_1" src="../assets/img/banner1.jpg" alt="">
+
+  <!-- CONTENIDO SUPERIOR -->
+    <ion-card-content>
+      <h1>Compra de cualquier lugar del mundo</h1>
+    </ion-card-content>  
+    <p>La mejor manera de comprar en línea, a un precio 
+          más accesible con nuestra comunidad de viajeros.</p>
+
+          <div class="buscar">
+            <ion-input class="inp_url_comp" type="search" placeholder="Pega la URL del producto que deseas comprar">
+              <ion-button (click)="onClick()" expand="block" fill="clear" shape="round" class="btn_buscar">
+                <i class="fas fa-search"></i>
+              </ion-button>
+            </ion-input>
+          </div>
+          <button type="submit" class="btn_crear_pedido">Crea tu pedido</button>   
+  </div>
+  
+<!--- ULTIMOS PEDIDOS -->
+
+<ion-card-content class="ultimos_pedidos">
+  <ion-text color="primary">
+    <h2><strong>Ultimos pedidos</strong></h2>
+  </ion-text>
+  <ion-text color="secondary">
+    <h3>Descubre los ultimos pedidos completados por nuestra comunidad y todo lo que han ganado viajando</h3>
+  </ion-text>
+
+  <ion-card-content class="row row-cols-1 row-cols-md-3 g-4 card_content1">
+
+    <ion-card class="card">
+        <ion-img src="../assets/img/bundle_color_portable (1).jpg" class="card-img-top img_product"></ion-img>
+        <ion-label class="label_div1">Enero 22 2019</ion-label>
+          <ion-img  class="img_person" src="../assets/img/Mask Group-1.png"></ion-img>
+          <ion-img class="img_person1" src="../assets/img/Mask Group.png"></ion-img>
+          <ion-label class="lbl_adriana lbl_name">Adriana <br> <ion-label class="lbl_ganado">Ganado $100 <br><ion-label class="lbl_tipo">Comprador</ion-label></ion-label></ion-label>
+          <ion-label class="lbl_alex lbl_name">Alex <br><ion-label class="lbl_ganado">Ahorrado $50 <br><ion-label class="lbl_tipo">Viajero</ion-label></ion-label></ion-label>
+    </ion-card>
+  
+    <ion-card class="card2">
+        <ion-img src="../assets/img/Tableta.png" class="card-img-top img_product2"></ion-img>
+        <ion-label class="label_div2">Enero 22 2019</ion-label>
+          <ion-img class="img_person" src="../assets/img/Mask Group-4.png"></ion-img>
+          <ion-img class="img_person1" src="../assets/img/Mask Group-5.png"></ion-img>
+          <ion-label class="lbl_andres">Andres<br><ion-label class="lbl_ganado">Ganado $100 <br><ion-label class="lbl_tipo">Viajero</ion-label></ion-label> </ion-label>
+          <ion-label class="lbl_carla">Carla <br> <ion-label class="lbl_ahorrado">Ahorrado $50 <br><ion-label class="lbl_tipo">Comprador</ion-label></ion-label></ion-label>
+    </ion-card>
+  
+    <ion-card class="card3">
+        <ion-img src="../assets/img/Zapatos_tenis.png" class="card-img-top img_product3"></ion-img>
+        <ion-label class="label_div3">Enero 22 2019</ion-label>
+      <ion-img class="img_person" src="../assets/img/Mask Group-3.png"></ion-img>
+      <ion-img class="img_person1" src="../assets/img/Mask Group-2.png"></ion-img>
+      <ion-label class="lbl_fernando">Fernando<br><ion-label class="lbl_ahorrado">Ahorrado $50 <br><ion-label class="lbl_tipo">Encomendero</ion-label></ion-label></ion-label>
+      <ion-label class="lbl_marcela">Marcela<br><ion-label class="lbl_ganado">Ganado $100 <br><ion-label class="lbl_tipo">Viajero</ion-label></ion-label> </ion-label>
+      
+    </ion-card>
+
+  </ion-card-content>
+
+</ion-card-content>
+
+<!-- COMO FUNCIONA -->
+<ion-card-content class="como_funciona_content">
+  <ion-label class="lbl_tema"><h1>¿Cómo funciona?</h1></ion-label>
+  <p class="prf_principal">Urra es la manera más fácil, rápida y económica de comprar lo que más deseas en otros países.</p>
+
+  <div class="buttons_group">
+    <button type="button" class="btn_comprar" >Comprar</button>
+    <button type="button" class="btn btn-light btn_viajar">Viaja</button>
+  </div>
+    
+  <div class="video_banner">
+    <video class="vd_banner" controls poster="../assets/img/Screen Comprador 1.png">
+    </video>  
+  </div>
+  <div class="banner_funtions">
+    <img class="bnr_funcion" src="../assets/img/Banner.png" alt="">
+  </div>
+  <button type="submit" class="btn_crear_pedido_bnr">Crea tu pedido</button>
+</ion-card-content>
+
+<!-- PRODUCTOS MAS BUSCADOS -->
+<ion-card-content class="prod_mas_buscados">
+  <ion-label class="lbl_tema1"><h1>Productos más buscados</h1></ion-label>
+  <p class="prf_principal1">Descubre los productos más deseados por nuestra comunidad.</p>
+
+</ion-card-content>
+
+</ion-content>
+

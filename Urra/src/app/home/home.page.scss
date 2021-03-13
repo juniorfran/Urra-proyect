@@ -1,0 +1,175 @@
+@use 'scss/cards';
+@use 'scss/labels';
+@use 'scss/nav_bar.scss';
+@use  'scss/principal.scss';
+@use 'scss/como_funciona.scss';
+
+
+/* VARIABLES Y MAS */
+
+$font_family_base: 'Courier New', Courier, monospace;
+$card_color : #f7f7f7;
+
+/* MENU PRINCIPAL */
+.nav {
+  @include nav_bar.menu;
+}
+
+/* CONTENIDO PRINCIPAL */
+
+.contenido{
+  @include principal.principal_content;
+}
+
+/* ULTIMOS PEDIDOS SASS*/
+
+.ultimos_pedidos{
+  padding-top: 10%;
+  background-color: #f7f7f7;
+  height: 100%;
+  width: 100%;
+
+  h2{
+    position: absolute;
+    width: 225px;
+    height: 55px;
+    left: 47%;
+    top: 92px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 41px;
+    text-align: center;
+    color: #0A0454;
+  }
+  h3{
+    position: absolute;
+    width: 900px;
+    height: 41px;
+    left: 30%;
+    top: 135px;
+    font-family: Nunito;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #8A8995;
+  }
+
+  .card_content1{
+
+    position: absolute;
+    width: 100%;
+    height: auto;
+    padding: 2px;
+    top: 0%;
+
+    /* card 1 gamepad */
+    .card{
+      @include cards.card;
+      
+      .lbl_adriana{
+        @include labels.comprador;
+      }
+      .lbl_alex{
+        @include labels.viajero;
+      }
+    }
+  /* card 2 tableta */
+    .card2{
+      @include cards.card2;
+      .lbl_andres{
+        @include labels.viajero;
+      }
+      .lbl_carla{
+        @include labels.comprador;
+      }
+    }
+    /* card 3 zapatos*/
+    .card3{
+      @include cards.card3;
+      .lbl_marcela{
+        @include labels.viajero;
+      }
+      .lbl_fernando{
+        @include labels.encomendero;
+      }
+    }
+
+  }
+
+  
+}
+
+/* COMO FUNCIONA */
+
+.como_funciona_content{
+  background-color: #f7f7f7;
+  height: 2100px;
+  width: 100%;
+
+  .lbl_tema{
+    @include labels.tema;
+  }
+  .prf_principal{
+    @include labels.parrafo;
+  }
+
+  .buttons_group{
+    position: absolute;
+    width: 65%;
+    top: 7%;
+    left: 45%;
+
+    @include como_funciona.btn_dobles;
+    
+  }
+  .video_banner{
+    position: absolute;
+    width: 500px;
+    top: 11%;
+    left: 25%;
+
+    @include como_funciona.vd_banner;
+  }
+  .banner_funtions{
+    position: relative;
+    left: 23.5%;
+    width: 1250px;
+    height: 1250px;
+    top: 725px;
+    .bnr_funcion{
+      top: 25%;
+
+    }
+    
+  }
+  .btn_crear_pedido_bnr{
+    position: absolute;
+      height: 55px;
+      width: 400px;
+      font-size: 18px;
+      left: 41%;
+      top: 95%;
+      border-radius: 25px 25px 25px 25px;
+      background: linear-gradient(268.04deg, #FFD014 -24.25%, #FEAF26 5.16%, #FD5B54 69.9%, #FC2A6E 110.91%);
+  }
+}
+
+/* PRODUCTOS MAS BUSCADOS */
+
+.prod_mas_buscados{
+  background-color: $card_color;
+  height: 100%;
+  width: 100%;
+
+  .lbl_tema1{
+    @include labels.tema1;
+  }
+  .prf_principa1{
+    @include labels.parrafo1;
+  }
+
+}

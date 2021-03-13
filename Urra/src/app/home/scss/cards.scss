@@ -1,0 +1,165 @@
+$font_family_base: 'Courier New', Courier, monospace;
+$card_color : #fdfdfd;
+
+@mixin card {
+    position: absolute;
+    width: 370px;
+    height: 519.55px;
+    left: 15%;
+    top: 300px;
+    background: $card_color;
+    box-shadow: 0px 0px 20px rgba(255, 255, 255, 0);
+    border-radius: 10px;
+    border-color: transparent;
+
+    .img_product{
+      position: absolute;
+      width: 95%;
+      height: auto;
+      padding: 5px 5px 5px 5px;
+      background-color: transparent;
+    }
+    .label_div1{
+      font-family: $font_family_base;
+      text-align: center;
+      position: absolute;
+      width: 96px;
+      height: 17px;
+      top: 35%;
+      left: 135px;  
+      font-family: Nunito;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 19px;
+
+    }
+    .img_person{
+      position: relative;
+      top: 50%;
+      max-width: 100px;
+      border-color: #ffffff;
+      border-radius: 10px;
+      left: 25px;
+      
+    }
+    .img_person1{
+      position: relative;
+      top: 31.5%;
+      left: 50%;
+      max-width: 100px;
+      border-color: #ffffff;
+      border-radius: 10px;
+      margin-left: 45px;  
+    }
+
+    
+}
+
+@mixin card2 {
+    position: absolute;
+      width: 370px;
+      height: 519.55px;
+      left: 40%;
+      top: 300px;
+      background: $card_color;
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.04);
+      border-radius: 10px;
+
+      .img_product2{
+        position: absolute;
+        width: 65%;
+        height: auto;
+        margin-left: 55px;
+        padding: 5px 5px 5px 5px;
+        background-color: transparent;
+      }
+      .label_div2{
+        font-family: $font_family_base;
+        text-align: center;
+        position: absolute;
+        width: 96px;
+        height: 17px;
+        top: 35%;
+        left: 115px;  
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+  
+      }
+      .img_person{
+        position: relative;
+        top: 50%;
+        max-width: 100px;
+        border-color: #ffffff;
+        border-radius: 10px;
+        left: 25px;
+        
+      }
+      .img_person1{
+        position: relative;
+        top: 31%;
+        left: 50%;
+        max-width: 100px;
+        border-color: #f0f0f0;
+        border-radius: 10px;
+        margin-left: 45px;
+        
+      }
+}
+
+@mixin card3 {
+    position: absolute;
+      width: 370px;
+      height: 519.55px;
+      left: 65%;
+      top: 300px;
+      background: $card_color;
+      box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.04);
+      border-radius: 10px;
+
+      .img_product3{
+        position: absolute;
+        width: 50%;
+        margin-left: 65px;
+        height: auto;
+        padding: 5px 5px 5px 5px;
+        background-color: transparent;
+      }
+      .label_div3{
+        font-family: $font_family_base;
+        text-align: center;
+        position: absolute;
+        width: 96px;
+        height: 17px;
+        top: 35%;
+        left: 115px;  
+        font-family: Nunito;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+  
+      }
+      .img_person{
+        position: relative;
+        top: 50%;
+        max-width: 100px;
+        border-color: #ffffff;
+        border-radius: 10px;
+        left: 25px;
+        
+      }
+      .img_person1{
+        position: relative;
+        top: 31%;
+        left: 50%;
+        margin-left: 45px;
+        max-width: 100px;
+        border-color: #ffffff;
+        border-radius: 10px;
+        
+      }
+}

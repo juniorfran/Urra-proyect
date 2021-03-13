@@ -1,0 +1,7 @@
+{
+  "name": "Urra",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
