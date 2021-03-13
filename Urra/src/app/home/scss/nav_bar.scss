@@ -1,33 +1,82 @@
+
+$font_family_base: 'Nunito';
+$card_color : #f7f7f7;
+
 @mixin menu {
-    position: sticky;
+  background-color: $card_color;
+  position: absolute;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 60px;
   top: 0;
-  padding-right: 40%;
+  width: 100%;
+
 }
 
 .nav {
-	background: #ffffff;
+	background-color: $card_color;
+  width: 100%;
   
 	&__title {
-    
+    background-color: $card_color;
+    position: relative;
 		margin: 0px 70px;
     size: 45px;
     
 	}
+  .nav__list{
+    background-color: $card_color;
+    position: relative;
+    left: 30px;
+  }
 	&__item {
-    left: 100%;
+    background-color: $card_color;
+    position: relative;
     padding-top: 20px;
     color: grey;
 		display: inline-block;
-		margin: 0px 25px;
+		margin: 0px 25px 0px 0px ;
     
 	}
   a{
     text-decoration: none;
     color: grey;
+  }
+
+  .nav_session{
+    background-color: $card_color;
+    .sesion{
+      right: 490px;
+      position: relative;
+      top: 20px;
+      .nav_sesion{
+        position: absolute;
+        padding-top: 0px;
+        color: grey;
+        display: inline-block;
+        margin: 0px 25px 0px 0px ;
+      }
+      .nav_sesion_noti{
+        left: 1450px;
+        position: fixed;
+        padding-top: 0px;
+        top: 20px;
+        color: grey;
+        display: inline-block;
+        margin: 0px 25px 0px 0px ;
+      }
+      .nav_sesion_mensaje{
+        left: 1480px;
+        position: fixed;
+        padding-top: 0px;
+        top: 20px;
+        color: grey;
+        display: inline-block;
+        margin: 0px 25px 0px 0px ;
+      }
+
+    }
   }
     
 }

@@ -7,13 +7,17 @@
 
 /* VARIABLES Y MAS */
 
-$font_family_base: 'Courier New', Courier, monospace;
+$font_family_base: 'Nunito';
 $card_color : #f7f7f7;
 
 /* MENU PRINCIPAL */
-.nav {
-  @include nav_bar.menu;
+.principal{
+  background-color: $card_color;
+  .nav {
+    @include nav_bar.menu;
+  }
 }
+
 
 /* CONTENIDO PRINCIPAL */
 
@@ -31,14 +35,14 @@ $card_color : #f7f7f7;
 
   h2{
     position: absolute;
-    width: 225px;
+    width: 450px;
     height: 55px;
-    left: 47%;
-    top: 92px;
+    left:40%;
+    top: 75px;
     font-family: Nunito;
     font-style: normal;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
     line-height: 41px;
     text-align: center;
     color: #0A0454;

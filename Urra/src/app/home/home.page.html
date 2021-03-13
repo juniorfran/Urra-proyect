@@ -1,8 +1,8 @@
 
 <!-- MENU PRINCIPAL -->
 
-<ion-header [translucent]="false" class="principal">
-  <ion-toolbar>
+<ion-header translucent="true" class="principal">
+  <ion-toolbar class="principal">
     <nav class="nav">
       <div class="nav__title">
         <a href="#"><ion-img src="../assets/img/Logo.png"></ion-img> </a>
@@ -12,8 +12,15 @@
         <li class="nav__item"><a href="#">Comprar</a></li>
         <li class="nav__item"><a href="#">Viajar</a></li>
         <li class="nav__item"><a href="#">Ayuda</a></li>
-        <li class="nav__item">|</li>
       </ul>
+      <div class="nav_session">
+        <ul class="sesion">
+          <li class="nav__sesion"><a href="#">Iniciar Sesion </a></li>
+          <li class="nav__sesion"><a href="#"><img src="#" alt="" name="Perfil_ico"></a></li>
+          <li class="nav_sesion_noti"><i class="far fa-bell"></i></li>
+          <li class="nav_sesion_mensaje"><i class="far fa-envelope"></i></li>
+        </ul>
+      </div>
     </nav>
   </ion-toolbar>
 </ion-header>
